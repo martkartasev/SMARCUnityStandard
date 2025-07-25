@@ -513,6 +513,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -813,6 +815,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -1453,6 +1457,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -1970,6 +1976,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -2683,6 +2691,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -3205,6 +3215,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -3777,6 +3789,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -3864,6 +3878,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -4037,6 +4053,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -4677,6 +4695,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -5374,6 +5394,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -5461,6 +5483,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -5582,6 +5606,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -5841,6 +5867,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -6272,6 +6300,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -7517,6 +7547,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -8003,6 +8035,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -8698,6 +8732,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -9510,6 +9546,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -10064,6 +10102,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -10185,6 +10225,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -10812,6 +10854,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -10985,6 +11029,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -11158,6 +11204,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -11709,6 +11757,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -11796,6 +11846,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -11987,6 +12039,8 @@ MonoBehaviour:
   AirDrag: 5
   AirAngularDrag: 5
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12194,6 +12248,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12281,6 +12337,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12368,6 +12426,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12455,6 +12515,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12628,6 +12690,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -12715,6 +12779,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -13094,6 +13160,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -13181,6 +13249,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -13268,6 +13338,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -14122,6 +14194,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -14556,6 +14630,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -14729,6 +14805,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -15133,6 +15211,10 @@ PrefabInstance:
       propertyPath: m_ParentAnchorRotation.z
       value: 0.7071069
       objectReference: {fileID: 0}
+    - target: {fileID: 8015596126415530489, guid: b2f9c349e7f9f430eae6dba87f83d39d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8739598895207085560, guid: b2f9c349e7f9f430eae6dba87f83d39d, type: 3}
       propertyPath: m_ParentAnchorPosition.y
       value: -0.041999817
@@ -15265,6 +15347,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -15732,6 +15816,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -15819,6 +15905,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -16123,6 +16211,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -16382,6 +16472,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -16675,6 +16767,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -17020,6 +17114,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -17193,6 +17289,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -17820,6 +17918,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -17923,6 +18023,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -18300,6 +18402,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -18387,6 +18491,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -18594,6 +18700,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -19513,6 +19621,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -19600,6 +19710,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
@@ -19807,6 +19919,8 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0

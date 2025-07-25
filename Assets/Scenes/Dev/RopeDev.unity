@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -38,13 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -94,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -199,13 +198,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &7336463
@@ -321,13 +321,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &61941106
@@ -380,6 +381,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -468,13 +472,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70096407}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 1623833007}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: -0, y: -0, z: -0}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -719,13 +723,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &101695828
@@ -838,13 +843,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &106088728
@@ -882,6 +888,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -985,13 +994,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113987249}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 550691694}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -1236,13 +1245,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &131012323
@@ -1324,13 +1334,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &133803299
@@ -1388,13 +1399,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133803299}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 797397997}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -1595,6 +1606,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1727,6 +1741,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1844,6 +1861,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1956,13 +1976,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &182630026
@@ -2015,6 +2036,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2098,6 +2122,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2200,6 +2227,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2283,6 +2313,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2410,13 +2443,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &250010637
@@ -2498,13 +2532,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &256698175
@@ -2562,13 +2597,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256698175}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1679042197}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -2813,13 +2848,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &271193031
@@ -2901,13 +2937,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &272552451
@@ -2989,13 +3026,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &279553722
@@ -3033,6 +3071,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3121,6 +3162,7 @@ Material:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &296547987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,6 +3213,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3259,13 +3304,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304209936}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 635416755}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -3510,13 +3555,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &357872107
@@ -3554,6 +3600,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3681,13 +3730,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &369408469
@@ -3769,13 +3819,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &404670408
@@ -3857,13 +3908,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &408455131
@@ -3901,6 +3953,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4004,13 +4059,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418282417}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1257426795}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -4255,13 +4310,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &423585819
@@ -4343,13 +4399,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &435325325
@@ -4402,6 +4459,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4514,13 +4574,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &450995184
@@ -4573,6 +4634,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4663,10 +4727,13 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4766,13 +4833,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454457352}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1930105163}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -5017,13 +5084,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &466462523
@@ -5105,13 +5173,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1001 &468981651
@@ -5226,6 +5295,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8015596126415530489, guid: b2f9c349e7f9f430eae6dba87f83d39d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8902112791058481484, guid: b2f9c349e7f9f430eae6dba87f83d39d, type: 3}
       propertyPath: Rope
       value: 
@@ -5403,13 +5476,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &488307317
@@ -5491,13 +5565,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &504065285
@@ -5535,6 +5610,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5633,6 +5711,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5755,13 +5836,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524507364}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1452780956}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -6016,13 +6097,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550691693}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 634588140}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -6223,6 +6304,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6350,13 +6434,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &570166725
@@ -6409,6 +6494,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6492,6 +6580,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6575,6 +6666,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6687,13 +6781,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &601976501
@@ -6746,6 +6841,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6814,6 +6912,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6998,6 +7099,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7135,13 +7239,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634588139}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1321435584}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -7362,13 +7466,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635416754}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 418282418}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -7613,13 +7717,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &663572279
@@ -7657,6 +7762,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7740,6 +7848,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7838,6 +7949,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7921,6 +8035,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7979,9 +8096,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -8031,8 +8147,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &705507995
 Transform:
   m_ObjectHideFlags: 0
@@ -8098,6 +8218,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8181,6 +8304,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8264,6 +8390,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8417,6 +8546,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8544,13 +8676,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &779127667
@@ -8588,6 +8721,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8686,6 +8822,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8769,6 +8908,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8857,13 +8999,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797397996}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 70096408}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -9064,6 +9206,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9225,13 +9370,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &807400460
@@ -9313,13 +9459,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &818489174
@@ -9401,13 +9548,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &863621795
@@ -9460,6 +9608,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9528,6 +9679,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9655,13 +9809,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &921614649
@@ -9719,13 +9874,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921614649}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 133803300}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -9970,13 +10125,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &949073797
@@ -10029,6 +10185,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10117,13 +10276,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952188131}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 454457353}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -10339,6 +10498,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10519,13 +10681,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1001 &985525621
@@ -10672,13 +10835,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1014228137
@@ -10731,6 +10895,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10814,6 +10981,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10926,13 +11096,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1061411230
@@ -10985,6 +11156,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11076,13 +11250,13 @@ CharacterJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064471079}
+  serializedVersion: 3
   m_ConnectedBody: {fileID: 2056003218}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: -0.00615131, z: 0.09981108}
-  serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
@@ -11188,13 +11362,14 @@ MonoBehaviour:
   AirDrag: 5
   AirAngularDrag: 5
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!114 &1064471086
@@ -11294,6 +11469,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11362,6 +11540,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11460,6 +11641,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11543,6 +11727,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11611,6 +11798,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11709,6 +11899,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11792,6 +11985,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11860,6 +12056,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11987,13 +12186,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1176283584
@@ -12031,6 +12231,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12157,6 +12360,9 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12357,13 +12563,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1205190508
@@ -12416,6 +12623,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12528,13 +12738,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1256422509
@@ -12626,13 +12837,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257426794}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1464768325}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -12833,6 +13044,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12970,13 +13184,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286402447}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1730443664}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -13192,6 +13406,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13304,13 +13521,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1309631816
@@ -13392,13 +13610,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1316723656
@@ -13480,13 +13699,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1321435583
@@ -13544,13 +13764,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321435583}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 304209937}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -13751,6 +13971,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13849,6 +14072,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13932,6 +14158,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14015,6 +14244,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14161,13 +14393,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1430313245
@@ -14254,6 +14487,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14322,6 +14558,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14517,13 +14756,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1452780955
@@ -14581,13 +14821,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452780955}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 113987250}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -14808,13 +15048,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464768324}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 256698176}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -15064,6 +15304,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15176,13 +15419,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1515266337
@@ -15235,6 +15479,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15352,13 +15599,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1534234366
@@ -15411,6 +15659,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15499,13 +15750,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542433303}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 524507365}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -15750,13 +16001,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1586149957
@@ -15809,6 +16061,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15892,6 +16147,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15975,6 +16233,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16043,6 +16304,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16170,13 +16434,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!4 &1623833005 stripped
@@ -16239,6 +16504,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16327,13 +16595,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679042196}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 952188132}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -16612,13 +16880,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1700533873
@@ -16671,6 +16940,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16793,13 +17065,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730443663}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 2110167917}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -17015,6 +17287,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17137,13 +17412,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809636975}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1286402448}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -17451,6 +17726,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17579,13 +17857,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1864490523
@@ -17623,6 +17902,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17755,6 +18037,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17901,13 +18186,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1885605149
@@ -17965,13 +18251,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885605149}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1542433304}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -18187,6 +18473,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18333,13 +18622,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1921628557
@@ -18392,6 +18682,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18480,13 +18773,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930105162}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 921614650}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -18771,6 +19064,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18883,13 +19179,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &1976570067
@@ -19039,13 +19336,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1 &2032471253
@@ -19083,6 +19381,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19181,6 +19482,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19269,13 +19573,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056003217}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1809636976}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -19491,6 +19795,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19603,13 +19910,14 @@ MonoBehaviour:
   AirDrag: 0.1
   AirAngularDrag: 0
   IsUnderwater: 0
+  IsSubmerged: 0
+  CurrentDepth: 0
   AddGravity: 0
   AutomaticCenterOfGravity: 0
   Mass: 0
   DrawForces: 0
-  GizmoSize: 0.01
-  AppliedBuoyancyForce: 0
-  AppliedGravityForce: 0
+  AppliedBuoyancyForce: {x: 0, y: 0, z: 0}
+  AppliedGravityForce: {x: 0, y: 0, z: 0}
   ApplyCustomForce: 0
   CustomForce: {x: 0, y: 0, z: 0}
 --- !u!1001 &2073721111
@@ -19793,6 +20101,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19881,13 +20192,13 @@ ConfigurableJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110167916}
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1885605150}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0.1}
-  serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
   m_YMotion: 0
@@ -20137,6 +20448,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
