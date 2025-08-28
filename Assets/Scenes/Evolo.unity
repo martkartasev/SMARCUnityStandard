@@ -1579,7 +1579,7 @@ MonoBehaviour:
   underWater: 1
   volumeBounds: {fileID: 0}
   volumeDepth: 50
-  volumeHeight: 0
+  volumeHeight: 2
   volumePrority: 0
   absorptionDistanceMultiplier: 1
   underWaterAmbientProbeContribution: 1

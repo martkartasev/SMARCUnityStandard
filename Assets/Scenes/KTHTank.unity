@@ -771,7 +771,7 @@ MonoBehaviour:
   surfaceType: 2
   geometryType: 2
   meshRenderers: []
-  timeMultiplier: 0.38
+  timeMultiplier: 0.62
   scriptInteractions: 0
   cpuEvaluateRipples: 0
   customMaterial: {fileID: 0}
@@ -829,7 +829,7 @@ MonoBehaviour:
   largeCurrentMapInfluence: 1
   supportRipplesCurrent: 0
   ripplesCurrentRes: 512
-  ripplesCurrentSpeedValue: 0
+  ripplesCurrentSpeedValue: -0.08
   ripplesCurrentMap: {fileID: 0}
   ripplesCurrentRegionExtent: {x: 100, y: 100}
   ripplesCurrentRegionOffset: {x: 0, y: 0}
@@ -905,8 +905,8 @@ MonoBehaviour:
   ripples: 1
   ripplesMotionMode: 0
   ripplesOrientationValue: 0
-  ripplesWindSpeed: 3.5
-  ripplesChaos: 0.692
+  ripplesWindSpeed: 2.1
+  ripplesChaos: 1
   ripplesFadeMode: 1
   ripplesFadeStart: 50
   ripplesFadeDistance: 200
